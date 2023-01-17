@@ -919,9 +919,9 @@ main{
         margin-top: -100px;
         margin-left: 45px;
         background: #000918;
-        width: 408px;
+        width: 412px;
         top: 350px;
-        left: -10%;
+        left: -11%;
     }
     .pyt{
         margin-top: 40px;
@@ -1021,6 +1021,17 @@ main{
         margin-top: -390px;
     }
 }
+@media screen and (max-width: 414px){
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+        background: #000918;
+        width: 414px;
+        top: 350px;
+        left: -11%;
+    }
+}
 @media screen and (max-width: 395px){
     .gradient{
         height: 485vh;
@@ -1084,9 +1095,9 @@ main{
         margin-top: -100px;
         margin-left: 45px;
         background: #000918;
-        width: 340px;
+        width: 360px;
         top: 350px;
-        left: -10%;
+        left: -12%;
     }
 }
 @media screen and (max-width: 280px){
