@@ -918,6 +918,10 @@ main{
         width: 50%;
         margin-top: -100px;
         margin-left: 45px;
+        background: #000918;
+        width: 408px;
+        top: 350px;
+        left: -10%;
     }
     .footer .satauri{
         display: none;
@@ -1027,6 +1031,26 @@ main{
     .navbar button{
         left: -3%;
     }
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+        background: #000918;
+        width: 360px;
+        top: 350px;
+        left: -10%;
+    }
+}
+@media screen and (max-width: 390px){
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+        background: #000918;
+        width: 390px;
+        top: 350px;
+        left: -12%;
+    }
 }
 @media screen and (max-width: 375px){
     .gradient{
@@ -1038,6 +1062,15 @@ main{
     .navbar button{
         left: -5%;
     }
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+        background: #000918;
+        width: 375px;
+        top: 350px;
+        left: -12%;
+    }
 }
 @media screen and (max-width: 360px){
     .navbar .logo{
@@ -1048,6 +1081,15 @@ main{
     }
     .gradient{
         height: 560vh;
+    }
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+        background: #000918;
+        width: 340px;
+        top: 350px;
+        left: -10%;
     }
 }
 @media screen and (max-width: 280px){
