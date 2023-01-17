@@ -1,0 +1,1049 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: url(img/BG.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #051a2e;
+    overflow-x: hidden;
+}
+.slider-img{
+    display: none;
+}
+.fullweb{
+    width: auto;
+}
+.gradient{
+    width: 100%;
+    height: 430vh;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000d1a 76.64%, #000c16 100%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    margin-left: 250px;
+    margin-top: 75px;
+    cursor: pointer;
+}
+.navbar{
+    position: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar button{
+    margin-right: 250px;
+    margin-top: 77px;
+    width: 181px;
+    height: 62px;
+    background: #00C9E0;
+    border: none;
+    /* Button Shadow */
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    border-radius: 48px;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background: rgb(2, 185, 185);
+}
+.navbar button a{
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*                                                           searchbar                                                               */
+.wrapper{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 500px;
+    margin-top: -65px;
+}
+.search_box_wrap{
+    position: relative;
+    width: 350px;
+    height: 60px;
+}
+.search_box_wrap .search_box{
+    width: 100%;
+    height: 60px;
+}
+.search_box_wrap .search_box .input_search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    border: 0;
+    height: 60px;
+    padding: 12px 0;
+    padding-right: 0;
+    font-size: 16px;
+    border-radius: 35px;
+    color: #000000;
+    transition: all 0.2s ease;
+}
+.search_box_wrap .icon{
+    display: flex;
+}
+.search_box_wrap .search_btn,
+.search_box_wrap .close_btn{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.search_box_wrap .search_btn{
+    top: 0;
+    right: 0;
+    color: #F5f5f5;
+    font-size: 20px;
+    z-index: 999;
+    justify-content: center;
+}
+.search_box_wrap .close_btn{
+    color: #f5f5f5;
+    font-size: 25px;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.search_box_wrap .search_btn:hover{
+    background: #eeeded;
+}
+.search_box_wrap .close_btn:hover{
+    background: #00C9E0;
+}
+
+.search_box_wrap.active .close_btn{
+    opacity: 1;
+    transform: rotate(360deg);
+    right: -60px;
+}
+
+.search_box_wrap.active .search_box .input_search{
+    background: none;
+    color: #f5f5f5;
+    padding: 12px 25px;
+    padding-right: 70px;
+    width: 100%;
+    transition: all 0.5s ease;
+    transition-delay: 0.75s;
+}
+
+/*                                                       searchbar end                                   */
+
+.mid h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* font-family: 'DM Serif Display', serif; */
+    font-family: 'noe display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 153px;
+    letter-spacing: -0.02em;
+    color: #F5f5f5;
+    margin-top: 295px;
+}
+.mid h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    font-family: 'Larsseit';
+    color: #F5f5f5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+}
+.mid p{
+    display: flex;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    /* or 26px */
+    justify-content: center;
+    text-align: center;
+    color: #F5f5f5;
+    margin-top: 50px;
+}
+.mid .scrolltxt P{
+    position: absolute;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 190%;
+    /* or 28px */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.9;
+    text-decoration: none;
+    margin-right:2050px;
+    margin-top: 400px;
+}
+.mid .scroll{
+    background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+    border-radius: 13px;
+    width: 2px;
+    height: 80px;
+    margin-left: 237px;
+    margin-top: 375px;
+}
+.mid .txt p{
+    display: flex;
+    writing-mode: vertical-lr;
+    margin-left: 225px;
+    margin-top: -130px;
+    transform: rotateY(-180deg);
+}
+.soc{
+    display: grid;
+    color: #00C9E0;
+    justify-content: flex-end;
+    margin-right: 237px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.pyt{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 150px;
+}
+.pyt h3{
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F5f5f5;
+}
+.pyt .xicon{
+    font-size: 25px;
+    color: #41EAD4;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pyt p{
+    font-family: 'Larsseit';
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/*                                        Second Nav                             */
+.secondnav{
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: 75px;
+}
+nav{
+    width: 45vw;
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: -100px;
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Larsseit';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    color: #b1b0b0;
+    letter-spacing: -0.02em;
+}
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #00C9E0;
+    height: 3px;
+    top: 35px;
+    width: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+nav a:hover{
+    color: #41EAD4;
+}
+nav a:hover:after{
+    width: 100%;
+    top: 35px;
+}
+main{
+    justify-content: center;
+    align-items: center;
+}
+.secondnav .line{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -60px;
+    width: 1100px;
+    height: 2px;
+    background-color: #41EAD4;
+    opacity: 0.6;
+    border-radius: 13px;
+    position: relative;
+}
+/*                                 NavBar END                  */
+
+.pwtxt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+.img-container{
+    position: relative;
+    margin-top: 100px;
+    width: 486px;
+    height: 607px;
+    background-image: url('img/1.jpg');
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.6);
+}
+.btn-left, .btn-right{
+    position: relative;
+    background: #011627;
+    box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    top: 92%;
+    left: 75%;
+}
+.soc1{
+    display: flex;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    margin-right: 580px;
+    color: #41EAD4;
+}
+.xazi{
+    position: relative;
+    display: flex;
+    float: right;
+    margin-right: -100px;
+}
+.soc1 .share p{
+    display: flex;
+    position: relative;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 22px */
+    letter-spacing: 0.15em;
+    margin-top: -35px;
+    margin-right: -100px;
+    color: #f5f5f5;
+}
+/* .pwtxt .btn-left{
+    top: 92%;
+    left: 75%;
+}
+.pwtxt .btn-right{
+    top: 92%;
+    left: 75%;
+} */
+.pwtxt .txt{
+    margin-left: 500px;
+    margin-top: 320px;
+}
+.pwtxt h4{
+    position: relative;
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 110%;
+    /* identical to box height, or 72px */
+    letter-spacing: -0.02em;
+    color: #F5f5f5;
+    margin-top: -400px;
+    margin-left: -435px;
+}
+.pwtxt p{
+    position: relative;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    /* or 26px */
+    letter-spacing: -0.02em;
+    color: #F5f5f5;
+    margin-left: -430px;
+}
+.pwtxt button{
+    position: relative;
+    width: 282px;
+    height: 65px;
+    top: 50px;
+    left: -430px;
+    background: #00C9E0;
+    /* Button Shadow */
+    border: none;
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    border-radius: 183px;
+}
+.pwtxt button a{
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 190%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.dots{
+    margin-left: -120px;
+    margin-top: 470px;
+}
+.seconddiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+.potoebi{
+    width: 1680px;
+    display: flex;
+    position: relative;
+    left: 23%;
+    margin-top: 200px;
+}
+.text h4{
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F5f5f5;
+}
+.text p{
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    /* or 27px */
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.img4{
+    margin-top: 0px;
+    margin-left: 250px;
+    cursor: pointer;
+    width: 800px;
+}
+.img4 .dots1{
+    margin-left: 700px;
+    margin-top: -600px;
+}
+
+.pbtn{
+    position: absolute;
+    top: 80%;
+}
+.pbtn button{
+    background: #00C9E0;
+    width: 282px;
+    height: 65px;
+    /* Button Shadow */
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    border-radius: 183px;
+    border: none;
+}
+.pbtn button a{
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 190%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+/* ----------------------- Testimonials Start------------------*/
+
+.testimonials{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+.bg{
+    width: 1680px;
+    height: 1448px;
+    background-color: #011627;
+    border-radius: 8px;
+}
+.testimonials .bg .tetswrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 78px;
+    margin-top: 73px;
+}
+.bg h5{
+    color: #f5f5f5;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: 100px;
+}
+.bg p{
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 36px */
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #F5f5f5;
+    margin-top: 31px;
+}
+.test1,
+.test2,
+.test3,
+.test4{
+    height: 504px;
+    width: 510px;
+    background: #02223B;
+    box-shadow: 0px 20px 30px rgba(0, 201, 224, 0.03);
+    border-radius: 5px;
+}
+.test1 p,
+.test2 p,
+.test3 p,
+.test4 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 34px */
+    color: #FFFFFF;
+    width: 334px;
+    height: 249px;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 102px;
+    margin-top: 75px;
+}
+.test1 .bx.bxs-quote-alt-left.bx-flashing,
+.test2 .bx.bxs-quote-alt-left.bx-flashing,
+.test3 .bx.bxs-quote-alt-left.bx-flashing,
+.test4 .bx.bxs-quote-alt-left.bx-flashing
+{   
+    position: relative;
+    color: #41EAD4;
+    font-size: 40px;
+    top: 90px;
+    margin-left: 50px;
+}
+.test1 .testimg1,
+.test2 .testimg2,
+.test3 .testimg3,
+.test4 .testimg4{
+    margin-left: 100px;
+}
+.test1 .testimg1 img,
+.test2 .testimg2 img,
+.test3 .testimg3 img,
+.test4 .testimg4 img{
+    border-radius: 50%;
+}
+.test1 .testimg1 h6,
+.test2 .testimg2 h6,
+.test3 .testimg3 h6,
+.test4 .testimg4 h6{
+    position: relative;
+    left: 100px;
+    top: -50px;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #f5f5f5;
+}
+
+/* ----------------------------- Testimonials END ----------------------------------*/
+
+/* -------------------------- Footer Start ---------------------------*/
+.footercontainer{
+    background-color: none;
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    position: relative;
+    background-color: none;
+    padding: 70px 0;
+}
+.footer .satauri a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.footer .satauri p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 31px;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 36px */
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #f5f5f5;
+}
+.footer ul{
+    list-style: none;
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+    margin-top: 100px;
+}
+.footer-col h6{
+    font-family: 'Larsseit';
+    font-size: 18px;
+    color: #F5f5f5;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h6::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #41EAD4;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #d6d6d6bd;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #f5f5f5;
+    padding-left: 5px;
+}
+.footer-col .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #41EAD4;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: #000d1a;
+    transition: all 0.5s ease;
+    font-size: 25px;
+    padding-top: 8px;
+}
+.footer-col .social a:hover{
+    color: #41EAD4;
+    background-color: #FFFFFF;
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 375px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+/* ------------------- Footer END ------------------ */
+/* ------------------- Responsive Start -------------*/
+@media screen and (max-width: 1920px){
+    .gradient{
+        height: 400vh;
+    }
+}
+@media screen and (max-width: 1280px){
+    .gradient{
+        height: 630vh;
+    }
+    .potoebi{
+        left: 42%;
+    }
+    .potoebi .text h4{
+        width: 200px;
+        margin-left: 430px;
+    }
+    .potoebi .text p{
+        width: 300px;
+        margin-left: 400px;
+    }
+    .potoebi .img4{
+        margin-right: 300px;
+    }
+    .pbtn{
+        margin-left: 400px;
+        margin-top: 150px;
+    }
+    .img4{
+        width: 600px;
+    }
+    .img4 img{
+        width: 250px;
+        height: 250px;
+    }
+    .dots1 img{
+        display: none;
+    }
+}
+@media screen and (max-width: 415px){
+    body{
+        overflow-x: hidden;
+    }
+    .gradient{
+        height: 440vh;
+    }
+    .logo{
+        position: relative;
+        left: -50%;
+    }
+    .navbar button{
+        position: relative;
+        width: 100px;
+        height: 50px;
+        background: #00C9E0;
+        right: -5%;
+    }
+    .navbar button a{
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    .wrapper{
+        position: relative;
+        left: 70%;
+        margin-top: -50px;
+    }
+    .search_box_wrap .search_btn,
+    .search_box_wrap .close_btn{
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .search_box_wrap.active .close_btn{
+        opacity: 1;
+        transform: rotate(360deg);
+        right: -30px;
+    }
+    .search_box_wrap.active .search_box .input_search{
+        width: 150px;
+        height: 50%;
+    }
+    .mid h1{
+        margin-top: 0px;
+        font-size: 100px;
+    }
+    .mid h2{
+        font-size: 12px;
+    }
+    .mid p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mid .container{
+        display: none;
+    }
+    .testimonials{
+        margin-top: -100px;
+    }
+    .testimonials .bg{
+        height: 1850px;
+    }
+    .test1,
+    .test2,
+    .test3,
+    .test4{
+        width: 300px;
+        height: 300px;
+    }
+    .test1 .bx.bxs-quote-alt-left.bx-flashing,
+    .test2 .bx.bxs-quote-alt-left.bx-flashing,
+    .test3 .bx.bxs-quote-alt-left.bx-flashing,
+    .test4 .bx.bxs-quote-alt-left.bx-flashing{
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .test1 p,
+    .test2 p,
+    .test3 p,
+    .test4 p{
+        font-size: 10px;
+        width: 200px;
+        margin-left: 60px;
+        margin-top: 0px;
+    }
+    .test1 .testimg1,
+    .test2 .testimg2,
+    .test3 .testimg3,
+    .test4 .testimg4{
+        position: relative;
+        margin-top: -100px;
+        margin-right: 150px;
+        
+    }
+    .test1 .testimg1 img,
+    .test2 .testimg2 img,
+    .test3 .testimg3 img,
+    .test4 .testimg4 img{
+        width: 60px;
+        margin-left: -85px;
+        margin-top: 30px;
+    }
+    .test1 .testimg1 h6,
+    .test2 .testimg2 h6,
+    .test3 .testimg3 h6,
+    .test4 .testimg4 h6{
+        font-size: 10px;
+        width: 200px;
+        margin-left: -100px;
+    }
+    .footer{
+        width: 50%;
+        margin-top: -100px;
+        margin-left: 45px;
+    }
+    .footer .satauri{
+        display: none;
+    }
+    .pyt{
+        margin-top: 40px;
+        padding-right: 10px;
+    }
+    .pyt .xicon{
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+    .pyt h3{
+        font-size: 40px;
+        width: 150px;
+        margin-top: 40px;
+    }
+    .pyt p{
+        width: 160px;
+        margin-top: 40px;
+        font-size: 13px;
+        margin-top: 50px;
+    }
+    /*----------------------Second Nav Start----------------------*/
+    .secondnav{
+        display: none;
+    }
+    .btn-left{
+        /* margin-top: 300px; */
+        margin-left: -50px;
+    }
+    .txt{
+        display: none;
+    }
+    .pwtxt .img-container{
+        position: relative;
+        margin-left: -200px;
+        width: 345px;
+        height: 600px;
+    }
+    .dots{
+        display: none;
+    }
+    .xazi{
+        display: none;
+    }
+    /*----------------------Second Nav End----------------------*/
+
+    /*----------------------Second Div Start----------------------*/
+    .seconddiv button{
+        position: relative;
+        margin-top: 50px;
+        left: -53%;
+    }
+    .potoebi{
+        display: none;
+    }
+    /*----------------------Second Div End----------------------*/
+    /* --------------------- slider -------------------- */
+    .slider-img{
+        position: relative;
+        width: 40%;
+        height: 30vh;
+        left: -27%;
+        background: url('img/1.jpg');
+        background-repeat: no-repeat;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+        border-radius: 0.5rem;
+        position: relative;
+        top: -300px;
+        margin: 17rem auto;
+        box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.6);
+    }
+    .btn-left1, .btn-right1{
+        position: absolute;
+        background-color: none;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .btn-left1{
+        top: 50%;
+        right: 90%;
+    }
+    .btn-right1{
+        top: 50%;
+        left: 110%;
+    }
+    .pbtn button{
+        display: flex;
+        width: 340px;
+        align-items: center;
+        padding-left: 70px;
+        position: relative;
+        left: -121%;
+        margin-top: -390px;
+    }
+}
+@media screen and (max-width: 390px){
+    .gradient{
+        height: 460vh;
+    }
+    .navbar button{
+        left: -3%;
+    }
+}
+@media screen and (max-width: 375px){
+    .gradient{
+        height: 475vh;
+    }
+    .navbar .logo{
+        left: -59%;
+    }
+    .navbar button{
+        left: -5%;
+    }
+}
+@media screen and (max-width: 360px){
+    .navbar .logo{
+        left: -65%;
+    }
+    .navbar button{
+        left: -5%;
+    }
+    .gradient{
+        height: 550vh;
+    }
+}
