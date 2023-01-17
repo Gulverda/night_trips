@@ -1022,7 +1022,7 @@ main{
 }
 @media screen and (max-width: 395px){
     .gradient{
-        height: 465vh;
+        height: 485vh;
     }
     .navbar button{
         left: -3%;
