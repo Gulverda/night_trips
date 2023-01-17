@@ -1020,9 +1020,9 @@ main{
         margin-top: -390px;
     }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 395px){
     .gradient{
-        height: 460vh;
+        height: 465vh;
     }
     .navbar button{
         left: -3%;
