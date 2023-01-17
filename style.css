@@ -857,9 +857,12 @@ main{
         display: none;
     }
     .testimonials{
-        margin-top: -100px;
+        margin-top: 100px;
+        position: relative;
+        left: 0%;
     }
     .testimonials .bg{
+        width: 400px;
         height: 1850px;
     }
     .test1,
@@ -1045,5 +1048,25 @@ main{
     }
     .gradient{
         height: 550vh;
+    }
+}
+@media screen and (max-width: 280px){
+    .navbar button{
+        display: none;
+    }
+    .navbar .logo{
+        left: -80%;
+    }
+    .wrapper{
+        left: 90%;
+    }
+    .footer{
+        left: -20%;
+    }
+    .gradient{
+        height: 605vh;
+    }
+    .navbar button{
+        left: -3%;
     }
 }
