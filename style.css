@@ -22,7 +22,7 @@ body{
 }
 .gradient{
     width: 100%;
-    height: 430vh;
+    height: 340vh;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000d1a 76.64%, #000c16 100%);
     position: absolute;
     background-repeat: no-repeat;
